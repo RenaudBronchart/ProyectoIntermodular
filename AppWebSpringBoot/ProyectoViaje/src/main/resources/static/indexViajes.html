@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Viajes</title>
+    <link rel="stylesheet" href="index.css"> <!-- Fichier CSS unifié -->
+</head>
+
+<body>
+    <h1>Lista de Viajes</h1>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Destinacion</th>
+                    <th>Fecha</th>
+                    <th>Borrar</th>
+                    <th>Editar</th>
+                    <th>Actividades</th>
+                </tr>
+            </thead>
+            <tbody id="viaje-body"></tbody>
+        </table>
+    </div>
+
+    <form class="form">
+        <label for="viaje-destinacion">Destinacion:</label>
+        <input type="text" id="viaje-destinacion" name="viaje-destinacion"><br>
+
+        <label for="viaje-fecha">Fecha:</label>
+        <input type="text" id="viaje-fecha" name="viaje-fecha"><br>
+
+        <button type="submit">Agregar Viaje</button>
+    </form>
+
+    <script src="indexViajes.js"></script>
+</body>
+
+</html>

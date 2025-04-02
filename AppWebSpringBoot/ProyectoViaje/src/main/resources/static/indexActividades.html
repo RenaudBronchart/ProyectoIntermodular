@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Actividades</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+
+<body>
+    <h1>Lista de Actividades</h1>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>IDViaje</th>
+                    <th>Nombre</th>
+                    <th>Número de Personas</th>
+                    <th>Precio</th>
+                    <th>Total Precio</th>
+                    <th>Borrar</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody id="actividades-body"></tbody>
+        </table>
+    </div>
+
+	<div class="container">
+	    <table class="table" id="tabla-precio-total">
+	        <thead>
+	            <tr>
+	                <th>Precio Total (€)</th>
+	            </tr>
+				
+	        </thead>
+	        <tbody>
+	            <tr>
+	                <td id="precio-total">0.00</td>
+	            </tr>
+	        </tbody>
+	    </table>
+	</div>
+
+    <!-- Formulaire pour ajouter ou éditer des activités -->
+    <form class="form">
+        <label for="actividad-nombre">Nombre:</label>
+        <input type="text" id="actividad-nombre" name="actividad-nombre"><br>
+        
+        <label for="actividad-numPers">Número de Personas:</label>
+        <input type="text" id="actividad-numPers" name="actividad-numPers"><br>
+
+        <label for="actividad-precio">Precio:</label>
+        <input type="text" id="actividad-precio" name="actividad-precio"><br>
+
+        <button type="submit">Agregar Actividad</button>
+    </form>
+
+    <!-- Lien vers le JavaScript -->
+	<script type="module" src="precioTotalPorViaje.js"></script>
+    <script type="module" src="indexActividades.js"></script>
+	
+</body>
+
+</html>
